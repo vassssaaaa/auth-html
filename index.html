@@ -2,23 +2,82 @@
 <html>
 <head>
     <title>Sprint 6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("https://images.wallpaperscraft.ru/image/single/fon_oblaka_sinij_214824_1920x1080.jpg");
+        }
+
+        .body {
+            text-align: center;
+        }
+
+        .form {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        .button {
+            border-radius: 10px;
+            background-color: #5F9EA0;
+            border: 1px solid #E0FFFF;
+            color: #E0FFFF;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .button-1 {
+            width: 150px;
+        }
+
+        .button-2 {
+            width: 200px;
+        }
+
+        .input-form {
+            width: 365px;
+            border-radius: 5px;
+            background-color: #E0FFFF;
+            height: 30px;
+            font-size: 16px;
+            padding: 5px;
+            border: 1px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #E0FFFF;
+            font-size: 25px;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <form>
-        <div>
-            Логин
-            <input name="login" placeholder="Ваша почта">
-        </div>
-        <div>
-            Пароль
-            <input name="password" placeholder="Пароль">
-        </div>
-        <button>
-            Войти
-        </button>
-        <button>
-            Присоединиться
-        </button>
-    </form>
+    <div class="body">
+        <form class="form">
+            <div class="input">
+                <p> Логин </p>
+                <input class="input-form" name="login" placeholder="Ваша почта">
+            </div>
+            <div class="input">
+                <p> Пароль </p>
+                <input class="input-form" name="password" placeholder="Пароль" type="password">
+            </div>
+            <button class="button button-1">
+                Войти
+            </button>
+            <button class="button button-2">
+                Присоединиться
+            </button>
+        </form>
+    </div>
 </body>
 </html>
