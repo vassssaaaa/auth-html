@@ -4,18 +4,16 @@
 }
 
 body {
+    height: 100vh;
     background-image: url("https://images.wallpaperscraft.ru/image/single/fon_oblaka_sinij_214824_1920x1080.jpg");
 }
 
 .body {
     text-align: center;
-}
-
-.form {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 51px);
 }
 
 .button {
