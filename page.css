@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://images.wallpaperscraft.ru/image/single/fon_oblaka_sinij_214824_1920x1080.jpg");
+}
+
+.body {
+    text-align: center;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.button {
+    border-radius: 10px;
+    background-color: rgba(43, 163, 188, 0.3);
+    border: 1px solid #E0FFFF;
+    color: #E0FFFF;
+    margin: 10px 5px 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.button-1 {
+    width: 160px;
+}
+
+.button-2 {
+    width: 200px;
+}
+
+.input-form {
+    width: 365px;
+    border-radius: 5px;
+    background-color: #E0FFFF;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #E0FFFF;
+    font-size: 25px;
+    padding: 10px;
+    text-align: left;
+}
