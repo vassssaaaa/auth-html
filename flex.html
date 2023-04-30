@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex-им</title>
+    <style>
+        .container-1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container-2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-3 {
+            display: flex;
+            justify-content: end;
+        }
+
+        .block {
+            border: 1px solid;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+        }
+
+        .block-1 {
+            order: 3;
+        }
+
+        .block-2 {
+            flex-grow: 2;
+        }
+
+        .block-3 {
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="block block-1">1</div>
+        <div class="block">2</div>
+        <div class="block">3</div>
+    </div>
+    <br>
+    <div class="container-2">
+        <div class="block block-3">1</div>
+        <div class="block">2</div>
+        <div class="block">3</div>
+    </div>
+    <br>
+    <div class="container-3">
+        <div class="block">1</div>
+        <div class="block block-2">2</div>
+        <div class="block">3</div>
+    </div>
+</body>
+</html>
