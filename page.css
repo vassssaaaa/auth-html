@@ -1,3 +1,9 @@
+:root {
+    --color1: #E0FFFF;
+    --button-height: 42px;
+    --menu-height: 6vh;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,17 +19,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 93vh;
+    height: calc(100vh - var(--menu-height));
 }
 
 .button {
     border-radius: 10px;
     background-color: rgba(43, 163, 188, 0.3);
-    border: 1px solid #E0FFFF;
-    color: #E0FFFF;
+    border: 1px solid var(--color1);
+    color: var(--color1);
     margin: 10px 5px 5px;
     padding: 10px;
     font-size: 18px;
+    height: var(--button-height);
+    transition: 500ms;
 }
 
 .button-1 {
@@ -37,7 +45,7 @@ body {
 .input-form {
     width: 365px;
     border-radius: 5px;
-    background-color: #E0FFFF;
+    background-color: var(--color1);
     height: 30px;
     font-size: 100%;
     padding: 5px;
@@ -46,15 +54,14 @@ body {
 }
 
 p {
-    color: #E0FFFF;
+    color: var(--color1);
     font-size: 25px;
     padding: 10px;
     text-align: left;
 }
 
 button.button:hover {
-    background-color: #2ba3bc;
-    border: 2px solid #E0FFFF;
+    background-color: #238ea3;
 }
 
 button.button:active {
